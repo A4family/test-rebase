@@ -2,6 +2,7 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <h1>hello</h1>
+        <h2>Hi</h2>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
