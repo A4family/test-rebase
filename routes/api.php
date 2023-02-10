@@ -20,3 +20,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::get('/test-api',function(){
 
 });
+Route::get('/a',function(){
+
+});
