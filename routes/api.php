@@ -23,3 +23,6 @@ Route::get('/test-api',function(){
 Route::get('/a',function(){
 
 });
+Route::get('/b',function(){
+
+});
