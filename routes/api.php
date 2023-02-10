@@ -26,3 +26,6 @@ Route::get('/a',function(){
 Route::get('/b',function(){
 
 });
+Route::get('/c',function(){
+
+});
