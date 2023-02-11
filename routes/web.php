@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Project;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,7 +18,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-
-Route::get('/branch-1',function(){
-
-}); 
+Route::get('/projects', [\App\Http\Controllers\ProjectsController::class,'index']);
+Route::post('/projects',[\App\Http\Controllers\ProjectsController::class,'store']);
