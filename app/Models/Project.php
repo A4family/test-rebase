@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Models;
 
 use Database\Factories\ProjectFactory;
@@ -24,5 +26,14 @@ class Project extends Model
     protected static function newFactory(): Factory
     {
         return ProjectFactory::new();
+    }
+
+
+    /**
+     * @return string
+     */
+    public function path(): string
+    {
+        return "/projects/$this->id";
     }
 }

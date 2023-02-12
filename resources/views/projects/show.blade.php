@@ -5,14 +5,11 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Projects</title>
+    <title>Document</title>
 </head>
 <body>
     <h1>Bird Board</h1>
-    @forelse($projects as $project)
-        <li><a href="{{ $project->path() }}">{{ $project->title ?? ''  }}</a></li>
-    @empty
-        <li>No Projects Yet</li>
-    @endforelse
+    <h1>{{ $project->title }}</h1>
+    <p>{{$project->description}}</p>
 </body>
 </html>
